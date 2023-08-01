@@ -1,5 +1,12 @@
 <?php
 
+use App\Http\Controllers\ExercicioCinco;
+use App\Http\Controllers\ExercicioDois;
+use App\Http\Controllers\ExercicioQuatro;
+use App\Http\Controllers\ExercicioSeis;
+use App\Http\Controllers\ExercicioSete;
+use App\Http\Controllers\ExercicioTres;
+use App\Http\Controllers\ExercicioUm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +21,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('exercicio/um', 
+[ExercicioUm::class, 'multiplicar']);
+
