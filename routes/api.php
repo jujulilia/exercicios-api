@@ -35,3 +35,6 @@ route::post('exercicio/quatro',
 
 route::post('exercicio/tres',
 [ExercicioTres::class, 'media']);
+
+route::post('exercicio/cinco', 
+[ExercicioCinco::class, 'verificar']);
