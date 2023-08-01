@@ -38,3 +38,6 @@ route::post('exercicio/tres',
 
 route::post('exercicio/cinco', 
 [ExercicioCinco::class, 'verificar']);
+
+route::post('exercicio/seis', 
+[ExercicioSeis::class, 'idade']);
