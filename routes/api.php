@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ExercicioCinco;
 use App\Http\Controllers\ExercicioDois;
+use App\Http\Controllers\ExercicioOito;
 use App\Http\Controllers\ExercicioQuatro;
 use App\Http\Controllers\ExercicioSeis;
 use App\Http\Controllers\ExercicioSete;
@@ -41,3 +42,7 @@ route::post('exercicio/cinco',
 
 route::post('exercicio/seis', 
 [ExercicioSeis::class, 'idade']);
+
+route::post('exercicio/oito', 
+[ExercicioOito::class, 'tabuada']);
+
